@@ -1,6 +1,6 @@
 PODS:
-  - UberCore (0.10.0)
-  - UberRides (0.10.0):
+  - UberCore (0.12.0)
+  - UberRides (0.12.0):
     - UberCore
 
 DEPENDENCIES:
@@ -9,14 +9,14 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   UberCore:
-    :path: ../../
+    :path: "../../"
   UberRides:
-    :path: ../../
+    :path: "../../"
 
 SPEC CHECKSUMS:
-  UberCore: bbeec9cb7b92de9f292df2f8a345f2e290212746
-  UberRides: ed61c8d3de1211f0e4b6568d36abc877fdfee2fb
+  UberCore: ab5cafb4a4a307512f0809e944a02a4c136f1e7d
+  UberRides: a85f85041155c857f671e5fb6155670f97f735b5
 
 PODFILE CHECKSUM: 1d713d30b94c4238ccc4571330ddf2a95fe4daf5
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.6.0

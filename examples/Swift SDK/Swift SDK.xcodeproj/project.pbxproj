@@ -199,7 +199,6 @@
 				AC0404A21BFAD0C800AC1501 /* Resources */,
 				DCEB80851D078BB500899810 /* Embed Frameworks */,
 				E6835DE2B81B6684590AD161 /* [CP] Embed Pods Frameworks */,
-				FEDC5CB1732B3B5AA0B562ED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,18 +258,18 @@
 					AC0404A31BFAD0C800AC1501 = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = 5F83KRY2FH;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1020;
 					};
 					AC0404B71BFAD0C800AC1501 = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = 36UPBWHAQE;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1020;
 						TestTargetID = AC0404A31BFAD0C800AC1501;
 					};
 					AC0404C21BFAD0C800AC1501 = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = 36UPBWHAQE;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1020;
 						TestTargetID = AC0404A31BFAD0C800AC1501;
 					};
 				};
@@ -280,8 +279,12 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
+				"zh-Hans",
+				"zh-Hant",
+				"hi-IN",
 			);
 			mainGroup = AC04049B1BFAD0C800AC1501;
 			productRefGroup = AC0404A51BFAD0C800AC1501 /* Products */;
@@ -347,7 +350,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Swift SDK/Pods-Swift SDK-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Swift SDK/Pods-Swift SDK-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/UberCore/UberCore.framework",
 				"${BUILT_PRODUCTS_DIR}/UberRides/UberRides.framework",
 			);
@@ -358,22 +361,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swift SDK/Pods-Swift SDK-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FEDC5CB1732B3B5AA0B562ED /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swift SDK/Pods-Swift SDK-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swift SDK/Pods-Swift SDK-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -568,8 +556,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uber.sdk.Swift-SDK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -586,8 +573,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uber.sdk.Swift-SDK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -599,8 +585,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uber.sdk.Swift-SDKTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift SDK.app/Swift SDK";
 			};
 			name = Debug;
@@ -613,8 +598,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uber.sdk.Swift-SDKTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift SDK.app/Swift SDK";
 			};
 			name = Release;
@@ -626,8 +610,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uber.sdk.Swift-SDKUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = "Swift SDK";
 				USES_XCTRUNNER = YES;
 			};
@@ -640,8 +623,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uber.sdk.Swift-SDKUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = "Swift SDK";
 				USES_XCTRUNNER = YES;
 			};

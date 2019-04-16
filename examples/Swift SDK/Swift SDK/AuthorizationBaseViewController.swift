@@ -35,8 +35,8 @@ class AuthorizationBaseViewController: UIViewController {
     }
     
     func showMessage(_ message: String) {
-        let alert = UIAlertController(title: nil, message: message, preferredStyle: UIAlertControllerStyle.alert)
-        let okayAction = UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil)
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: UIAlertController.Style.alert)
+        let okayAction = UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil)
         alert.addAction(okayAction)
         self.present(alert, animated: true, completion: nil)
     }
